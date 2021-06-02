@@ -1,0 +1,169 @@
+.contact {
+  //margin-top: 179px;
+  margin-bottom: 59px;
+}
+
+.contact .container {
+  max-width: 896px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact__text {
+  width: 50%;
+}
+
+.contact__text-title {
+  font-size: 4.9rem;
+  margin-bottom: 22px;
+}
+
+.contact__text-description {
+  font-family: var(--f-second);
+  font-size: 1.6rem;
+  margin-bottom: 42px;
+}
+
+.contact__text-contacts {
+  font-family: var(--f-second);
+  font-size: 1.6rem;
+  color: var(--c-second);
+  display: flex;
+}
+
+.contact__text-email {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact__text-email::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-image: url(../../assets/Mail_Icon.svg);
+  margin-right: 10px;
+}
+
+.contact__text-phone {
+  display: flex;
+  align-items: center;
+}
+
+.contact__text-phone::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-image: url(../../assets/Phone_Icon.svg);
+  margin-right: 10px;
+}
+
+.form {
+  width: 50%;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__row label {
+  font-family: var(--f-second);
+  font-size: 1.1rem;
+  color: var(--c-first);
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.form__name {
+  margin-bottom: 46px;
+}
+
+.form__email {
+  margin-bottom: 30px;
+}
+
+.form__name input,
+.form__email input {
+  height: 44px;
+  border: none;
+  border-bottom: 1px solid var(--c-second);
+}
+
+.form .form__checkbox .checkbox {
+  display: flex;
+}
+
+.form__checkbox {
+  font-family: var(--f-second);
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.checkbox .checkbox__input {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.checkbox .checkbox__input:checked {
+  appearance: none;
+  border: none;
+  background-image: url(../../assets/Ckechmark-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-btn {
+  font-family: var(--f-second);
+  font-size: 1.3rem;
+  color: #fff;
+  border: none;
+  background-color: var(--c-first);
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  width: 226px;
+  height: 57px;
+  margin-top: 20px;
+}
+
+.form__row:last-child {
+  align-items: flex-end;
+}
+
+@media (max-width: 1050px) {
+  .contact {
+    margin-top: 0;
+    margin-bottom: 44px;
+
+    .container {
+      flex-direction: column;
+
+      .contact__text, .form {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact__text-contacts {
+    flex-direction: column;
+
+    .contact__text-email {
+      margin-bottom: 17px;
+    }
+
+    .contact__text-phone {
+      margin-bottom: 56px;
+    }
+  }
+}

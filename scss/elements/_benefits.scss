@@ -1,0 +1,280 @@
+.benefits {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+
+.benefits .container {
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+.benefit {
+  height: 370px;
+  background-color: #fff;
+  margin-bottom: 37px;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit__text {
+  margin-left: 35px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit__text:after {
+  content: "";
+  width: 328px;
+  height: 4px;
+  display: block;
+  margin-top: 50px;
+}
+
+.benefit:nth-child(1) .benefit__text:after {
+  background-color: var(--c-third);
+}
+
+.benefit:nth-child(2) .benefit__text:after {
+  background-color: var(--c-first);
+}
+
+.benefit__column:nth-child(1) .benefit__text:after {
+  background-color: var(--c-fourth);
+}
+
+.benefit:nth-child(2) .benefit__text {
+  margin-right: 20px;
+}
+
+.benefit__title {
+  font-size: 3.6rem;
+  margin-bottom: 30px;
+}
+
+.benefit__description {
+  font-size: 1.6rem;
+  font-family: var(--f-second)
+}
+
+.benefit__img {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.benefit:nth-child(1) .benefit__img img {
+  position: absolute;
+  bottom: 38px;
+  right: 118px;
+}
+
+.benefit:nth-child(2) .benefit__img img {
+  position: absolute;
+  bottom: 13px;
+  left: 70px;
+}
+
+.benefit__laptop {
+  position: relative;
+  z-index: 0;
+}
+
+.benefit__laptop-shape {
+  width: 180px;
+  height: 180px;
+  background-color: var(--c-third);
+  border-radius: 41px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  z-index: -1;
+}
+
+.benefit__laptop .benefit__img img {
+  max-width: 387px;
+}
+
+.benefit__phone {
+  position: relative;
+  z-index: 0;
+}
+
+.benefit__phone-shape {
+  width: 320px;
+  height: 320px;
+  background-color: var(--c-first);
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  z-index: -1;
+}
+
+.benefit__phone .benefit__img img {
+  max-width: 426px;
+}
+
+.benefit__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 61px;
+}
+
+.benefit__columns .benefit {
+  margin-bottom: 0;
+}
+
+.benefit__columns .benefit__text {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.benefit__column-text {
+  max-width: 624px;
+}
+
+.benefit__column-img {
+  height: 370px;
+  background-color: #55DFB4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.benefit__columns .benefit__column-img img {
+  width: 296px;
+}
+
+@media (max-width: 1050px) {
+  .benefits .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits {
+    padding: 42px 0;
+  }
+
+  .benefit {
+    width: 500px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefit__text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 26px 50px 30px 50px;
+  }
+
+  .benefit__text:after {
+    display: none;
+  }
+
+  .benefit__img {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .benefit:nth-child(1) .benefit__img img {
+    position: static;
+    max-width: 287px;
+  }
+
+  .benefit:nth-child(2) .benefit__img img {
+    position: static;
+    max-width: 326px;
+  }
+
+  .benefit__laptop {
+    flex-direction: column-reverse;
+  }
+
+  .benefit__laptop-shape {
+    width: 125px;
+    height: 125px;
+    top: 15px;
+    right: 100px;
+  }
+
+  .benefit__phone-shape {
+    width: 220px;
+    height: 220px;
+    top: 30px;
+    left: 90px;
+  }
+
+  .benefit__columns {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .benefit__column-img {
+    height: 270px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 525px) {
+  .benefit {
+    max-width: 374px;
+  }
+
+  .benefit:nth-child(1) .benefit__img img {
+    max-width: 193px;
+  }
+
+  .benefit:nth-child(2) .benefit__img img {
+    max-width: 175px;
+  }
+
+  .benefit__laptop-shape {
+    width: 90px;
+    height: 90px;
+    top: 10px;
+    right: 75px;
+  }
+
+  .benefit__phone-shape {
+    width: 132px;
+    height: 132px;
+    top: 30px;
+    left: 97px;
+  }
+
+  .benefit__column-img {
+    height: 195px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .benefit {
+    max-width: 300px;
+  }
+
+  .benefit__laptop-shape {
+    right: 35px;
+  }
+
+  .benefit__phone-shape {
+    left: 60px;
+  }
+
+  .benefit__columns .benefit__column-img img {
+    width: 250px;
+  }
+}

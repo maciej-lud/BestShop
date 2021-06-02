@@ -1,0 +1,49 @@
+.footer {
+  height: 89px;
+  margin-top: 59px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  font-size: 2.6rem;
+  color: var(--c-first);
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.footer__copyrights {
+  font-family: var(--f-second);
+  font-size: 1.1rem;
+  color: var(--c-second);
+}
+
+.footer__media {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__media-tweeter,
+.footer__media-facebook {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    margin-top: 0;
+  }
+}
